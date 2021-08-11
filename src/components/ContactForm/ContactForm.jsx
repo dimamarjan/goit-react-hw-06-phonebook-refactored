@@ -7,7 +7,7 @@ import {
     SubmitButton
 } from 'components/ContactForm/ContactForm.style'
 import { useDispatch, useSelector} from 'react-redux';
-import { addContact } from 'redux/actions/contactAction';
+import { addContact } from 'redux/slices/items';
 import { nanoid } from 'nanoid'
 
 

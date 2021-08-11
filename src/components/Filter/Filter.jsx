@@ -5,7 +5,7 @@ import {
     AccentText
 } from "components/Filter/Filter.style"
 import { useDispatch } from 'react-redux';
-import { addFilter } from 'redux/actions/contactAction';
+import { filterUpdate } from 'redux/slices/filter';
 
 
 
@@ -14,7 +14,7 @@ export function Filter() {
 
 
     const onChangeHandle = ({ target }) => {
-        dispatch(addFilter(target.value))
+        dispatch(filterUpdate(target.value))
     };
 
     return (
